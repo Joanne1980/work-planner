@@ -37,6 +37,7 @@ var futureColor =""
 var time = thisHour
 var thisHour = moment(time).format('H')
 var timeblocks = $('.timeblock')
+//create blocks for information, time, date and save button.
 timeblocks.each(function(i){
 var displayTime = $("<div>")
 displayTime.addClass("col-1 border")
@@ -52,18 +53,23 @@ var hour = $(this).attr('data-hour');
 hour = parseInt(hour, 10)
 thisHour = parseInt(thisHour, 10)
 
+
 if (hour < thisHour){
-    $(this).css('background-color', pastColor)
+    $(this).css('background-color','orange', pastColor)
 } else if (hour == thisHour){
-    $(this).css('background-color', presentColor)    
+    $(this).css('background-color','red', presentColor)    
     } else {
-    $(this).css('background-color', futureColor)   
+    $(this).css('background-color', 'green', futureColor)   
  }
- //console.log(thisHour)
- //console.log(hour)
+ $("#saveButton")
+  .mouseenter(function() {
+    $(this).css("background","darkblue")
+  }).mouseleave(function() {
+    $(this).css("background", "lightblue");
+  });
 })   
 
-//console.log(inputs)
+//save to local storage and recall
 $(".save").on("click", function(event){ 
 event.preventDefault()
 var userInput = $(this).siblings("textArea").val()

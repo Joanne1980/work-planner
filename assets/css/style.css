@@ -44,17 +44,17 @@ body {
   
   .past {
     background-color: #d3d3d3;
-    color: lightskyblue;
+    color: white;
   }
   
   .present {
     background-color: #ff6961;
-    color:orange;
+    color: white;
   }
   
   .future {
     background-color: #77dd77;
-    color:greenyellow;
+    color: white;
   }
   
   .saveBtn {
