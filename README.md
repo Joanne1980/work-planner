@@ -8,6 +8,7 @@ I have colour coded the time blocks orange for past, red for the present and gre
 
 ## Deployed link 
 
+[link to deployed webpage](https://joanne1980.github.io/work-planner/)
 
 
 ## Screen Shots
