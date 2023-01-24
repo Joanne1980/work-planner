@@ -69,11 +69,11 @@ event.preventDefault()
 var userInput = $(this).siblings("textArea").val()
 var time = $(this).siblings("div").text()
 localStorage.setItem(time, userInput)
-var saveMsg = "Saved to local storage"
-$(saveMsg).ready(function(){
-    $("saveMsg")
+//var saveMsg = "Saved to local storage"
+//$(saveMsg).ready(function(){
+    //$("saveMsg") });
 });
-});
+
 $("#9").val(localStorage.getItem("9"))
 $("#10").val(localStorage.getItem("10"))  
 $("#11").val(localStorage.getItem("11"))
