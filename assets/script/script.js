@@ -55,19 +55,13 @@ thisHour = parseInt(thisHour, 10)
 
 
 if (hour < thisHour){
-    $(this).css('background-color','orange', pastColor)
+    $(this).css('background-color','orange', pastColor, saveButton.hover)
 } else if (hour == thisHour){
     $(this).css('background-color','red', presentColor)    
     } else {
     $(this).css('background-color', 'green', futureColor)   
  }
- $("#saveButton")
-  .mouseenter(function() {
-    $(this).css("background","darkblue")
-  }).mouseleave(function() {
-    $(this).css("background", "lightblue");
-  });
-})   
+});   
 
 //save to local storage and recall
 $(".save").on("click", function(event){ 
@@ -75,7 +69,11 @@ event.preventDefault()
 var userInput = $(this).siblings("textArea").val()
 var time = $(this).siblings("div").text()
 localStorage.setItem(time, userInput)
+var saveMsg = "Saved to local storage"
+$(saveMsg).ready(function(){
+    $("saveMsg")
 });
+
 $("#9").val(localStorage.getItem("9"))
 $("#10").val(localStorage.getItem("10"))  
 $("#11").val(localStorage.getItem("11"))
@@ -85,3 +83,4 @@ $("#14").val(localStorage.getItem("14"))
 $("#15").val(localStorage.getItem("15"))
 $("#16").val(localStorage.getItem("16"))
 $("#17").val(localStorage.getItem("17"))
+});
