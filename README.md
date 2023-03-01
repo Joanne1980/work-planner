@@ -8,8 +8,10 @@ I have colour coded the time blocks orange for past, red for the present and gre
 
 ## Deployed link 
 
-[link to deployed webpage](https://joanne1980.github.io/work-planner/)
+https://joanne1980.github.io/work-planner/
 
+## Github link
+https://github.com/Joanne1980/work-planner
 
 ## Screen Shots
 ![alt text](/assets/images/workplanner1.png?raw=true)
